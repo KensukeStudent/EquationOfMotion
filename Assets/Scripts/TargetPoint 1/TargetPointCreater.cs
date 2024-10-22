@@ -1,13 +1,10 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-namespace TargetPosition
+namespace TargetPosition2
 {
     public class TargetPointCreater : MonoBehaviour
     {
-        [SerializeField, Header("頂点の高さ: halfHeight"), Range(0.1f, 10)]
-        private float halfHeight;
-
         [SerializeField]
         private Transform start;
 
@@ -45,7 +42,7 @@ namespace TargetPosition
             int count = 0;
             for (float i = 0; i <= 1; i += duration)
             {
-                var y = calcYPosition.GetPositionY(start.position, halfHeight, i);
+                var y = calcYPosition.GetPositionY(start.position, end.position.y, i);
                 var x = calcXPosition.GetPositionX(start.position, distance, calcYPosition.FinalTime, i);
 
                 if (count >= objs.Count)
