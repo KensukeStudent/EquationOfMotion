@@ -2,6 +2,7 @@ using UnityEngine;
 
 /// <summary>
 /// 変位基準のシュミレート
+/// 頂点座標と距離を用いた斜方投射
 /// </summary>
 namespace Displacement
 {
