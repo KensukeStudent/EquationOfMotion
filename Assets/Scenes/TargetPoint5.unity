@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 1578164480}
   - component: {fileID: 1578164481}
   m_Layer: 0
-  m_Name: TargetPointCreater
+  m_Name: AbsorptionControl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -332,15 +332,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1578164479}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 241d802074b1c8b49a91403a4b279479, type: 3}
+  m_Script: {fileID: 11500000, guid: 4439a42ba9311524296a07d1bba2a91f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetTime: 2
-  speed: 1
-  isFlip: 0
+  circleCount: 30
+  prefab: {fileID: -8848055892851083412, guid: b1d9430c344bb314ea7c331559bba668, type: 3}
   start: {fileID: 1273023741}
   end: {fileID: 1265623524}
-  moveObj: {fileID: 1909222684}
+  tables:
+  - {fileID: 11400000, guid: 893f8b0aceed3684c893b67bed71563e, type: 2}
+  - {fileID: 11400000, guid: 666ce7f0d93efb9458cde7992ba26b71, type: 2}
+  - {fileID: 11400000, guid: b2fc155e35eaa1745ba691bd0ef03a47, type: 2}
+  - {fileID: 11400000, guid: 64239b7ee6705364db628e51859e1ea2, type: 2}
+  - {fileID: 11400000, guid: 0b40df6978da8654b9ba3eb8fed91c4d, type: 2}
+  - {fileID: 11400000, guid: d3ba8a69dfef4134b88bea20f6cbb9a5, type: 2}
+  - {fileID: 11400000, guid: 192d7ffbbfcb37a4d8ddc6ca7a88823c, type: 2}
+  - {fileID: 11400000, guid: 3f85ce601bed3184d84ffe42bd0d7114, type: 2}
 --- !u!1 &1791216427
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,65 +432,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1909222683
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1854319739009547847, guid: cfa3171f7e993f24b92104cf41ce139b, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1854319739009547847, guid: cfa3171f7e993f24b92104cf41ce139b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1854319739009547847, guid: cfa3171f7e993f24b92104cf41ce139b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1854319739009547847, guid: cfa3171f7e993f24b92104cf41ce139b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1854319739009547847, guid: cfa3171f7e993f24b92104cf41ce139b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1854319739009547847, guid: cfa3171f7e993f24b92104cf41ce139b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1854319739009547847, guid: cfa3171f7e993f24b92104cf41ce139b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1854319739009547847, guid: cfa3171f7e993f24b92104cf41ce139b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1854319739009547847, guid: cfa3171f7e993f24b92104cf41ce139b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1854319739009547847, guid: cfa3171f7e993f24b92104cf41ce139b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1854319739009547847, guid: cfa3171f7e993f24b92104cf41ce139b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1854319739009547849, guid: cfa3171f7e993f24b92104cf41ce139b, type: 3}
-      propertyPath: m_Name
-      value: Circle
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: cfa3171f7e993f24b92104cf41ce139b, type: 3}
---- !u!1 &1909222684 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1854319739009547849, guid: cfa3171f7e993f24b92104cf41ce139b, type: 3}
-  m_PrefabInstance: {fileID: 1909222683}
-  m_PrefabAsset: {fileID: 0}

@@ -11,7 +11,7 @@ namespace TargetPosition4
         [SerializeField, Header("指定座標の放物線を通る時間")]
         private float targetTime = 0;
 
-        [SerializeField, Min(1)]
+        [SerializeField, Min(0.01f)]
         private float speed = 1;
 
         [SerializeField]
